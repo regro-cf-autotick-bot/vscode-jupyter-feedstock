@@ -1,5 +1,6 @@
 {% set name = "vscode-jupyter" %}
 {% set version = "2021.02.1" %}
+{% set install_version = "2021.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -53,7 +54,7 @@ requirements:
 
 test:
   commands:
-    - code-server --list-extensions --show-versions | grep ms-toolsai.jupyter@{{ version }}
+    - code-server --list-extensions --show-versions | grep ms-toolsai.jupyter@{{ install_version }}
 
 about:
   home: https://github.com/microsoft/vscode-jupyter
