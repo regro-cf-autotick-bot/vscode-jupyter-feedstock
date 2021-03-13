@@ -1,5 +1,5 @@
 {% set name = "vscode-jupyter" %}
-{% set version = "2020.12.1" %}
+{% set version = "2021.02.1" %}
 
 package:
   name: {{ name|lower }}
