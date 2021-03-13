@@ -1,5 +1,6 @@
 {% set name = "vscode-jupyter" %}
-{% set version = "2020.12.1" %}
+{% set version = "2021.02.1" %}
+{% set install_version = "2021.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://github.com/microsoft/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 99502db43f9f2ac4185d55ae51a70c81ffe9353983dcaca5cd1a7cf29f783a11
+  sha256: 56289bd77a3b7699cc8c65a4487e9c96ee305eb3a9ee0c60d2e35ee89c342250
   patches:
     - osx-arm64.patch  # [osx and arm64]
 
@@ -53,7 +54,7 @@ requirements:
 
 test:
   commands:
-    - code-server --list-extensions --show-versions | grep ms-toolsai.jupyter@{{ version }}
+    - code-server --list-extensions --show-versions | grep ms-toolsai.jupyter@{{ install_version }}
 
 about:
   home: https://github.com/microsoft/vscode-jupyter
