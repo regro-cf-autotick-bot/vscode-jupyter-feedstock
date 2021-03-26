@@ -1,6 +1,6 @@
 {% set name = "vscode-jupyter" %}
 {% set version = "2021.3.1" %}
-{% set install_version = "2021.2.0" %}
+{% set install_version = "2021.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ requirements:
     - python
     - pip <21
     - packaging
-    - code-server >=3.9
+    - code-server >=3.9.2
     - gulp-cli
     - zeromq
     - vsce
@@ -50,7 +50,7 @@ requirements:
     - libjpeg-turbo
   run:
     - python
-    - code-server >=3.9
+    - code-server >=3.9.2
 
 test:
   commands:
