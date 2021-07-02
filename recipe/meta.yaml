@@ -1,5 +1,5 @@
 {% set name = "vscode-jupyter" %}
-{% set version = "2021.3.1" %}
+{% set version = "2021.6.9999" %}
 {% set install_version = "2021.3.0" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/microsoft/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ba7697897bca89d717898c8445219344dc36d236223d1259b61012f3037b1b34
+  sha256: b939f66848b361e8100550286dcf45d982434fc16af974836fd1a7112624e378
   patches:
     - osx-arm64.patch  # [osx and arm64]
 
