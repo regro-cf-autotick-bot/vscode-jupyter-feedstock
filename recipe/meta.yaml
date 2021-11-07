@@ -1,5 +1,5 @@
 {% set name = "vscode-jupyter" %}
-{% set version = "2021.3.1" %}
+{% set version = "2021.8.12" %}
 {% set install_version = "2021.3.0" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/microsoft/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ba7697897bca89d717898c8445219344dc36d236223d1259b61012f3037b1b34
+  sha256: 1f672df5cd4ef7d3bf4b625f36a22474bcd053633357bc8b4ba72581fd9943ac
   patches:
     - osx-arm64.patch  # [osx and arm64]
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   ignore_run_exports:
     # node-canvas is built but not installed, so ignore its dependencies
