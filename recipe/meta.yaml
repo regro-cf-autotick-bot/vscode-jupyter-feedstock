@@ -64,7 +64,6 @@ about:
     - LICENSE
     - ThirdPartyNotices-Distribution.txt
     - ThirdPartyNotices-Repository.txt
-    - extension_license.txt
   summary: VS Code Jupyter extension
 
 extra:
