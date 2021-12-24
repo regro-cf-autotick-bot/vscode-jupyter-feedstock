@@ -22,6 +22,8 @@ glib:
 - '2'
 libjpeg_turbo:
 - '2'
+nodejs:
+- '16'
 pango:
 - '1.48'
 pin_run_as_build:

@@ -22,6 +22,8 @@ libjpeg_turbo:
 - '2'
 macos_machine:
 - x86_64-apple-darwin13.4.0
+nodejs:
+- '17'
 pango:
 - '1.48'
 pin_run_as_build:
