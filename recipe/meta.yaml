@@ -33,6 +33,7 @@ requirements:
     - make
     - pkg-config
     - jq
+    - nodejs
   host:
     - python
     - pip <21
@@ -41,6 +42,7 @@ requirements:
     - gulp-cli
     - zeromq
     - vsce
+    - nodejs
     # As part of the build, we are compiling node-canvas from source
     - pixman
     - giflib
