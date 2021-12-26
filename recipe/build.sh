@@ -5,6 +5,12 @@ set -exuo pipefail
 if [[ "${target_platform}" == osx-* ]]; then
   export CXXFLAGS=${CXXFLAGS/c++14/c++17}
 fi
+if [[ "${target_platform}" == "linux-aarch64" ]]; then
+  export linux_aarch64=arm64
+fi
+
+rm $PREFIX/bin/node
+ln -s $BUILD_PREFIX/bin/node $PREFIX/bin/node
 
 # This bundles Python packages but this is noted in ThirdPartyVersions.txt
 # The package does some trickery to use these packages explicitly and not the ones installed in the environment.
