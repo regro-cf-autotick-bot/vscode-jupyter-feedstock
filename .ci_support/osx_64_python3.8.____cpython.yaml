@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '11'
+- '12'
 cairo:
 - '1.16'
 channel_sources:
@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '12'
 giflib:
 - '5.2'
 glib:
@@ -23,7 +23,7 @@ libjpeg_turbo:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pango:
-- '1.48'
+- '1.50'
 pin_run_as_build:
   cairo:
     max_pin: x.x
