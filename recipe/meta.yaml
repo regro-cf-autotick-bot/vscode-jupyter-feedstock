@@ -13,7 +13,7 @@ source:
     - osx-arm64.patch  # [osx and arm64]
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   ignore_run_exports:
     # node-canvas is built but not installed, so ignore its dependencies
